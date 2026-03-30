@@ -47,5 +47,15 @@ int main(int argc, char *argv[]) {
 	// Continuacao Nota: por isso se usa float e o %.1f que limite as casas decimais para 1 casa após a virgula.
 	printf("metade: %.1f\n", metade);
 	
+		/* Estrutura de Repetição (Loop For):
+	   - int mult = 0: Inicializa o contador em zero.
+	   - mult <= 10: O loop continua enquanto i for menor ou igual a 10.
+	   - mult++: Incrementa o contador em +1 a cada volta.
+	*/
+	for(int mult = 0; mult <=10; mult++){
+		// Exibe a linha da tabuada: multiplicador, número base e o resultado
+		printf("%d x %d = %d\n", mult, nInteiro, mult*nInteiro);
+	}
+	
 	return 0; // Finaliza o programa retornando 0 ao sistema
 }
