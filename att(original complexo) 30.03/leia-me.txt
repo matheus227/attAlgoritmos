@@ -1,0 +1,3 @@
+esse código foi feito na aula de algoritmos do dia 30/03/2026
+o código está com elementos/coisas a mais do que o professor pediu.
+dentro do meu perfil do GitHub há outro código mais simples e fiel ao pedido do professor Marco.
