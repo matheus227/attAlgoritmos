@@ -32,11 +32,14 @@ int main(int argc, char *argv[]) {
 	/* --- Operações Matemáticas --- */
 	
 	int dobro = nInteiro * 2;   // Multiplica o valor inserido por 2
-	int metade = nInteiro / 2;  // Divide o valor inserido por 2 (divisão inteira)
-	
+	float metade = nInteiro / 2.0; /* Divide o valor inserido por 2 (divisão inteira se caso a variavel for int)
+	com a variavel float(numero com casas decimais/num flutuante) é obrigatorio colocar a casa decimal. ex: 2.0, sem essa virgula
+	para delimitar o numero, o float n divide direito
+	*/
 	// Exibe os resultados dos cálculos
-	printf("dobro: %d \n", dobro);
-	printf("metade: %d \n", metade);
+	printf("dobro: %d\n", dobro);
+	printf("metade: %.1f\n", metade); //%.1f define o tanto de casas decimais(casas apos a virgula)
+
 	
 	return 0; // Indica que o programa terminou com sucesso
 }
