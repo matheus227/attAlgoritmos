@@ -34,14 +34,18 @@ int main(int argc, char *argv[]) {
 	/* --- Operacoes Matematicas --- */
 	
 	int dobro = nInteiro * 2;   // Multiplicacao simples
-	int metade = nInteiro / 2;  // Divisao inteira (ignora o que vem apos a virgula)
+	float metade = nInteiro / 2.0;  // Divisao inteira (ignora o que vem apos a virgula) | divisão float(numero flutuante/decimal)
+	//inclui numeros depois da virgula
+	
+	//numeros flutuantes(float/com casas decimais, se utiliza o ponto( . ) NUNCA a virgula
 	
 	// Exibe os resultados dos calculos
 	printf("dobro: %d \n", dobro);
 	
 	// Exibindo a metade. 
 	// Nota: Se nInteiro for impar, o C descarta a parte decimal (.5). por conta da variavel ser inteira
-	printf("metade: %d \n", metade); 
+	// Continuacao Nota: por isso se usa float e o %.1f que limite as casas decimais para 1 casa após a virgula.
+	printf("metade: %.1f\n", metade);
 	
 	return 0; // Finaliza o programa retornando 0 ao sistema
 }
